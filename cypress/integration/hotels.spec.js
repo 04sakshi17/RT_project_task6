@@ -37,7 +37,7 @@ describe('Cypress', () => {
   });
 
   it('and verifies if the review is added', () => {
-    cy.wait(600);
+    cy.sync(600);
 
     cy.get('h3').contains('Test review');
     cy.get('div').contains('Is a test review by Cypress');
